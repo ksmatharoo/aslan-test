@@ -1,0 +1,70 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "aslan-test"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "delta-spark" },
+    { name = "pyspark" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "delta-spark", specifier = "==4.1.0" },
+    { name = "pyspark", specifier = ">=4.1.1" },
+]
+
+[[package]]
+name = "delta-spark"
+version = "4.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "importlib-metadata" },
+    { name = "pyspark" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2f/09/d394015eb956c4475f6a949fb5fccedf7af19f97e981acbc81629e868a5e/delta_spark-4.1.0.tar.gz", hash = "sha256:98f73c2744f972919e0472974467f85d157810b617341ebf586374d91b8eadc7", size = 36808, upload-time = "2026-02-20T18:37:59.8Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b7/03/2e440efd4a49c8ecfbcb665dea7db94583cf33a365d8480e47fb0aa0dc39/delta_spark-4.1.0-py3-none-any.whl", hash = "sha256:d80f6ebca542df48f257f2535f9c8c21bbfda65771b6ec21be843c0087e1dece", size = 43877, upload-time = "2026-02-20T18:37:58.15Z" },
+]
+
+[[package]]
+name = "importlib-metadata"
+version = "9.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "zipp" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a9/01/15bb152d77b21318514a96f43af312635eb2500c96b55398d020c93d86ea/importlib_metadata-9.0.0.tar.gz", hash = "sha256:a4f57ab599e6a2e3016d7595cfd72eb4661a5106e787a95bcc90c7105b831efc", size = 56405, upload-time = "2026-03-20T06:42:56.999Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/38/3d/2d244233ac4f76e38533cfcb2991c9eb4c7bf688ae0a036d30725b8faafe/importlib_metadata-9.0.0-py3-none-any.whl", hash = "sha256:2d21d1cc5a017bd0559e36150c21c830ab1dc304dedd1b7ea85d20f45ef3edd7", size = 27789, upload-time = "2026-03-20T06:42:55.665Z" },
+]
+
+[[package]]
+name = "py4j"
+version = "0.10.9.9"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/38/31/0b210511177070c8d5d3059556194352e5753602fa64b85b7ab81ec1a009/py4j-0.10.9.9.tar.gz", hash = "sha256:f694cad19efa5bd1dee4f3e5270eb406613c974394035e5bfc4ec1aba870b879", size = 761089, upload-time = "2025-01-15T03:53:18.624Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bd/db/ea0203e495be491c85af87b66e37acfd3bf756fd985f87e46fc5e3bf022c/py4j-0.10.9.9-py2.py3-none-any.whl", hash = "sha256:c7c26e4158defb37b0bb124933163641a2ff6e3a3913f7811b0ddbe07ed61533", size = 203008, upload-time = "2025-01-15T03:53:15.648Z" },
+]
+
+[[package]]
+name = "pyspark"
+version = "4.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "py4j" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/19/bf/58ee13add151469c25825b7125bbf62c3bdcec05eec4d458fcb5c5516066/pyspark-4.1.1.tar.gz", hash = "sha256:77f78984aa84fbe865c717dd37b49913b4e5c97d76ef6824f932f1aefa6621ec", size = 455359625, upload-time = "2026-01-09T09:38:38.28Z" }
+
+[[package]]
+name = "zipp"
+version = "3.23.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/30/21/093488dfc7cc8964ded15ab726fad40f25fd3d788fd741cc1c5a17d78ee8/zipp-3.23.1.tar.gz", hash = "sha256:32120e378d32cd9714ad503c1d024619063ec28aad2248dc6672ad13edfa5110", size = 25965, upload-time = "2026-04-13T23:21:46.6Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/08/8a/0861bec20485572fbddf3dfba2910e38fe249796cb73ecdeb74e07eeb8d3/zipp-3.23.1-py3-none-any.whl", hash = "sha256:0b3596c50a5c700c9cb40ba8d86d9f2cc4807e9bedb06bcdf7fac85633e444dc", size = 10378, upload-time = "2026-04-13T23:21:45.386Z" },
+]
